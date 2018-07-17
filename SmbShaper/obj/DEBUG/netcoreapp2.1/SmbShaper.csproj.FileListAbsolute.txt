@@ -1,0 +1,9 @@
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\bin\Debug\netcoreapp2.1\SmbShaper.deps.json
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\bin\Debug\netcoreapp2.1\SmbShaper.dll
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\bin\Debug\netcoreapp2.1\SmbShaper.pdb
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.csprojAssemblyReference.cache
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.csproj.CoreCompileInputs.cache
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.AssemblyInfoInputs.cache
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.AssemblyInfo.cs
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.dll
+C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\SmbShaper\obj\Debug\netcoreapp2.1\SmbShaper.pdb
