@@ -11,6 +11,7 @@ namespace SmbShaper
 	{
 		public static Color[,] Normalize(Color[,] src, Color[] BackgroundColors, ColorConfiguration configuration)
 		{
+            return null;
 			for (int i = 0; i < src.GetLength(0); i++)
 			{
 				for (int j = 0; j < src.GetLength(1); j++)

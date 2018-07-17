@@ -697,23 +697,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lautaro\\.nuget\\packages\\": {},
+    "C:\\Users\\samba\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lautaro\\Documents\\JuniorOwnFolder\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\Lautaro\\Documents\\JuniorOwnFolder\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\Lautaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lautaro\\Documents\\JuniorOwnFolder\\SmbShaper\\ConsoleApp1\\obj\\",
+      "projectPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\samba\\.nuget\\packages\\",
+      "outputPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lautaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -726,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Lautaro\\Documents\\JuniorOwnFolder\\SmbShaper\\SmbShaper\\SmbShaper.csproj": {
-              "projectPath": "C:\\Users\\Lautaro\\Documents\\JuniorOwnFolder\\SmbShaper\\SmbShaper\\SmbShaper.csproj"
+            "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\SmbShaper\\SmbShaper.csproj": {
+              "projectPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\SmbShaper\\SmbShaper.csproj"
             }
           }
         }

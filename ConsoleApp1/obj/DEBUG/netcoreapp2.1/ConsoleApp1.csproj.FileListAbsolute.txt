@@ -12,3 +12,17 @@ C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\ConsoleApp1\obj\Debug\netco
 C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
 C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
 C:\Users\Lautaro\Documents\JuniorOwnFolder\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\SmbShaper.dll
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\SmbShaper.pdb
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb
