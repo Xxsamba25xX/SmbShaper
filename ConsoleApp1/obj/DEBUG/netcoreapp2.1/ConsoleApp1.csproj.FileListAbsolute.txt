@@ -26,3 +26,17 @@ E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\
 E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
 E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
 E:\Usuario\Documentos\_PROYECTOS_\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\SmbShaper.dll
+D:\SmbShaper\ConsoleApp1\bin\Debug\netcoreapp2.1\SmbShaper.pdb
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CopyComplete
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+D:\SmbShaper\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb
