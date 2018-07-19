@@ -697,23 +697,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samba\\.nuget\\packages\\": {},
+    "C:\\Users\\Lautaro\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "D:\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\samba\\.nuget\\packages\\",
-      "outputPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\ConsoleApp1\\obj\\",
+      "projectPath": "D:\\SmbShaper\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\Lautaro\\.nuget\\packages\\",
+      "outputPath": "D:\\SmbShaper\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\samba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lautaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -726,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\SmbShaper\\SmbShaper.csproj": {
-              "projectPath": "E:\\Usuario\\Documentos\\_PROYECTOS_\\SmbShaper\\SmbShaper\\SmbShaper.csproj"
+            "D:\\SmbShaper\\SmbShaper\\SmbShaper.csproj": {
+              "projectPath": "D:\\SmbShaper\\SmbShaper\\SmbShaper.csproj"
             }
           }
         }
