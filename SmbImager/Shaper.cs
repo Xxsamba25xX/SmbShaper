@@ -13,6 +13,7 @@ namespace SmbImager
 		public static Color[,] Normalize(Color[,] src, Color[] backgroundColors, ColorConfiguration configuration)
 		{
 			Color[,] result = new Color[src.GetLength(0), src.GetLength(1)];
+			Rectangle bound = new Rectangle(Point.Empty, new Size(src.GetLength(0), src.GetLength(1)));
 			for (int i = 0; i < src.GetLength(0); i++)
 			{
 				for (int j = 0; j < src.GetLength(1); j++)
@@ -26,22 +27,32 @@ namespace SmbImager
 					else
 					{
 						//Obtenemos los puntos colindantes basicos(NSEO)
+						bool inCollision = false;
 						var colliders = GetColliders(new Point(i, j), false);
 						foreach (var item in colliders)
 						{
 							//si colinda con el fondo setearlo de color borde
-							if (IsBackgroundColor(src[item.X, item.Y], backgroundColors))
+							if (IsOutOfBound(item, bound) || IsBackgroundColor(src[item.X, item.Y], backgroundColors))
 							{
 								result[i, j] = configuration.Limite;
+								inCollision = true;
 								break;
 							}
 						}
 						//si no colinda con fondo setearlo de color relleno
-						result[i, j] = configuration.Relleno;
+						if(!inCollision)result[i, j] = configuration.Relleno;
 					}
 				}
 			}
 			return result;
+		}
+
+		private static bool IsOutOfBound(Point item, Rectangle bound)
+		{
+			return (item.X >= bound.Right) ||
+				(item.X < bound.Left) ||
+				(item.Y >= bound.Bottom) ||
+				(item.Y < bound.Top);
 		}
 
 		private static Point[] GetColliders(Point point, bool fullColliders)

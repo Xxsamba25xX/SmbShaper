@@ -26,9 +26,9 @@ namespace SmbImager.UTILS
 			bitmap.UnlockBits(bitmapData);
 			Color[,] result = new Color[bitmap.Width, bitmap.Height];
 			int index = 0;
-			for (int i = 0; i < result.GetLength(1); i++)
+			for (int i = 0; i < bitmap.Height; i++)
 			{
-				for (int j = 0; j < result.GetLength(0); j++)
+				for (int j = 0; j < bitmap.Width; j++)
 				{
 					if (bpp == 4)
 						result[j, i] = Color.FromArgb(rgbaValues[index + 3], rgbaValues[index + 2], rgbaValues[index + 1], rgbaValues[index + 0]);
@@ -37,7 +37,6 @@ namespace SmbImager.UTILS
 					index += bpp;
 				}
 			}
-
 			return result;
 		}
 
@@ -55,15 +54,15 @@ namespace SmbImager.UTILS
 			int bpp = bitmapData.Stride / bitmap.Width;
 
 			int index = 0;
-			for (int i = 0; i < colors.GetLength(1); i++)
+			for (int y = 0; y < bitmap.Height; y++)
 			{
-				for (int j = 0; j < colors.GetLength(0); j++)
+				for (int x = 0; x < bitmap.Width; x++)
 				{
 					if (bpp == 4)
-						rgbaValues[index + 3] = colors[j, i].A;
-					rgbaValues[index + 2] = colors[j, i].R;
-					rgbaValues[index + 1] = colors[j, i].G;
-					rgbaValues[index + 0] = colors[j, i].B;
+						rgbaValues[index + 3] = colors[x, y].A;
+					rgbaValues[index + 2] = colors[x, y].R;
+					rgbaValues[index + 1] = colors[x, y].G;
+					rgbaValues[index + 0] = colors[x, y].B;
 
 					index += bpp;
 				}
