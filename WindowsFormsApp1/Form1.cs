@@ -15,10 +15,12 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        Random r = new Random();
         ColorConfiguration cf = new ColorConfiguration()
         {
             Fondo = Color.Black,
             Limite = Color.Magenta,
+            ViejoLimite = Color.Red,
             Relleno = Color.LimeGreen
         };
 
@@ -36,11 +38,20 @@ namespace WindowsFormsApp1
                 pictureBox1.Image = Image.FromFile(opf.FileName);
                 var colors = ImageUtils.GetColors((Bitmap)pictureBox1.Image);
                 var normalized = Shaper.Normalize(colors, new Color[] { colors[0, 0] }, cf);
-                pictureBox2.Image = ImageUtils.CreateBitmap(normalized);
+                var shapes = Shaper.Shapify(normalized, cf);
+                Bitmap b = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                using (Graphics g = Graphics.FromImage(b))
+                {
+                    g.Clear(Color.Yellow);
+                    foreach (var item in shapes)
+                    {
+                        g.FillPolygon(new SolidBrush(Color.FromArgb(r.Next(256), r.Next(256), r.Next(256))), item.Points);
+                    }
+                }
+                pictureBox2.Image = b;
                 pictureBox2.Refresh();
             }
         }
-
 
     }
 }

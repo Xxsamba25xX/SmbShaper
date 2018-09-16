@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SmbImager.UTILS
 {
-	public enum Cardinals
+	public enum Cardinal
 	{
 		N = 0,
 		NE = 1,
