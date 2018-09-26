@@ -2,13 +2,7 @@
 using SmbImager.MODEL;
 using SmbImager.UTILS;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -27,6 +21,18 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            InitializeComponentOwn(ControlFlags.Pictures);
+        }
+
+        private void InitializeComponentOwn(ControlFlags flags)
+        {
+            if (flags.HasFlag(ControlFlags.Pictures))
+            {
+                groupBox1.Location = new Point(10, button1.Bounds.Bottom + 6);
+                groupBox1.Size = new Size(Math.Max(0, ((this.ClientSize.Width - 40) / 2)), Math.Max(0, this.ClientSize.Height - groupBox1.Location.Y - 10));
+                groupBox2.Location = new Point(this.ClientSize.Width/2 + 10, button1.Bounds.Bottom + 6);
+                groupBox2.Size = new Size(Math.Max(0, ((this.ClientSize.Width - 40) / 2)), Math.Max(0, this.ClientSize.Height - groupBox2.Location.Y - 10));
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,5 +59,30 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            InitializeComponentOwn(ControlFlags.Pictures);
+        }
+
+        private void panel1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
+                scrollPanel2.VerticalScroll.Value = e.NewValue;
+            else
+                scrollPanel2.HorizontalScroll.Value = e.NewValue;
+        }
+
+        private void scrollPanel2_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
+                scrollPanel1.VerticalScroll.Value = e.NewValue;
+            else
+                scrollPanel1.HorizontalScroll.Value = e.NewValue;
+        }
     }
 }

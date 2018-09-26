@@ -122,7 +122,7 @@ namespace SmbImager
             else return new Point[]
             {
                 point.Get((Cardinal)(((int)from+0)%8)),
-                point.Get((Cardinal)(((int)from+2)%8)) ,
+                point.Get((Cardinal)(((int)from+2)%8)),
                 point.Get((Cardinal)(((int)from+4)%8)),
                 point.Get((Cardinal)(((int)from+6)%8)),
             };
