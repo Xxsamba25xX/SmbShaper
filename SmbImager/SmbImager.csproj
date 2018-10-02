@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MODEL\ColorConfiguration.cs" />
+    <Compile Include="MODEL\Progress.cs" />
     <Compile Include="MODEL\Shape.cs" />
     <Compile Include="MODEL\TrackeableList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +51,9 @@
     <Compile Include="UTILS\Enums.cs" />
     <Compile Include="UTILS\Extensions.cs" />
     <Compile Include="UTILS\ImageUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
