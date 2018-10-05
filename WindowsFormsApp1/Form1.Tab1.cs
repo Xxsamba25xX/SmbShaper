@@ -9,32 +9,56 @@ namespace WindowsFormsApp1
 {
    public partial class Form1 : Form
    {
+      object objDummy = new object();
+      double progressValue = 0;
+      public double ProgressValue
+      {
+         get
+         {
+            lock (objDummy)
+            {
+               return progressValue;
+            }
+         }
+         set
+         {
+            lock (objDummy)
+            {
+               progressValue = value;
+            }
+         }
+      }
+
       private void button1_Click(object sender, EventArgs e)
       {
          OpenFileDialog opf = new OpenFileDialog();
          opf.Filter = "image|*.png";
          if (opf.ShowDialog() == DialogResult.OK)
          {
+            pictureBox1.Image = Image.FromFile(opf.FileName);
             Task.Run(() => Shapify(opf.FileName));
+            timer1.Start();
          }
       }
 
       private void Shapify(string filename)
       {
-         Image image = Image.FromFile(filename);
-         ThreadSafe(() => lblPath.Text = filename);
-         ThreadSafe(() => pictureBox1.Image = image);
-         var colors = ImageUtils.GetColors((Bitmap)image.Clone());
+         Color[,] colors = null;
+         using (Image image = Image.FromFile(filename))
+         {
+            colors = ImageUtils.GetColors((Bitmap)image);
+         }
+
+         //ThreadSafe(() => lblPath.Text = filename);
          shaper.OnProgressChanged += new EventHandler<Progress>((x, y) =>
          {
-            var value = (int)Math.Round(y.Percentage);
-            if (value % 10 == 0) Task.Run(() => {  ThreadSafe(() => progressBar1.Value = value); });
+            ProgressValue = y.Percentage;
          });
 
          var normalized = shaper.Normalize(colors, new Color[] { colors[0, 0] }, cf);
          var shapes = shaper.Shapify(normalized, cf);
 
-         Bitmap b = new Bitmap(image.Width, image.Height);
+         Bitmap b = new Bitmap(colors.GetLength(1), colors.GetLength(0));
          using (Graphics g = Graphics.FromImage(b))
          {
             g.Clear(Color.Yellow);
@@ -62,6 +86,11 @@ namespace WindowsFormsApp1
             scrollPanel1.VerticalScroll.Value = e.NewValue;
          else
             scrollPanel1.HorizontalScroll.Value = e.NewValue;
+      }
+
+      private void timer1_Tick(object sender, EventArgs e)
+      {
+         ThreadSafe(() => progressBar1.Value = (int)ProgressValue);
       }
    }
 }
