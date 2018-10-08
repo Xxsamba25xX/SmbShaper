@@ -28,23 +28,19 @@ namespace WindowsFormsApp1
       {
          if (flags.HasFlag(ControlFlags.Pictures))
          {
-            groupBox1.Location = new Point(10, button1.Bounds.Bottom + 6);
-            groupBox1.Size = new Size(Math.Max(0, ((groupBox1.Parent.Width - 40) / 2)), Math.Max(0, groupBox1.Parent.Height - groupBox1.Location.Y - 10));
-            groupBox2.Location = new Point(this.ClientSize.Width / 2 + 10, button1.Bounds.Bottom + 6);
-            groupBox2.Size = new Size(Math.Max(0, ((groupBox2.Parent.Width - 40) / 2)), Math.Max(0, groupBox2.Parent.Height - groupBox2.Location.Y - 10));
+            groupBox1.Location = new Point(10, pnPresentation.Bottom + 6);
+            groupBox1.Size = new Size(Math.Max(0, (groupBox1.Parent.Width - 20)), Math.Max(0, groupBox1.Parent.Height - groupBox1.Location.Y - 10));
          }
       }
 
       private void Form1_Load(object sender, EventArgs e)
       {
-
       }
 
       private void Form1_SizeChanged(object sender, EventArgs e)
       {
          InitializeComponentOwn(ControlFlags.Pictures);
       }
-
 
       private void ThreadSafe(Action action)
       {
@@ -54,6 +50,9 @@ namespace WindowsFormsApp1
             action();
       }
 
-      
+      private void panel2_Paint(object sender, PaintEventArgs e)
+      {
+
+      }
    }
 }

@@ -9,23 +9,17 @@ namespace WindowsFormsApp1
 {
    public partial class Form1 : Form
    {
-      object objDummy = new object();
       double progressValue = 0;
+      object objProgress = new object();
       public double ProgressValue
       {
          get
          {
-            lock (objDummy)
-            {
-               return progressValue;
-            }
+            lock (objProgress) return progressValue;
          }
          set
          {
-            lock (objDummy)
-            {
-               progressValue = value;
-            }
+            lock (objProgress) progressValue = value;
          }
       }
 
@@ -68,24 +62,6 @@ namespace WindowsFormsApp1
                g.FillPolygon(new SolidBrush(Color.FromArgb(r.Next(256), r.Next(256), r.Next(256))), item.Points);
             }
          }
-         ThreadSafe(() => pictureBox2.Image = b);
-         ThreadSafe(() => pictureBox2.Refresh());
-      }
-
-      private void panel1_Scroll(object sender, ScrollEventArgs e)
-      {
-         if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
-            if (scrollPanel2.VerticalScroll.Minimum <= e.NewValue && scrollPanel2.VerticalScroll.Maximum >= e.NewValue) scrollPanel2.VerticalScroll.Value = e.NewValue;
-            else
-           if (scrollPanel2.HorizontalScroll.Minimum <= e.NewValue && scrollPanel2.HorizontalScroll.Maximum >= e.NewValue) scrollPanel2.HorizontalScroll.Value = e.NewValue;
-      }
-
-      private void scrollPanel2_Scroll(object sender, ScrollEventArgs e)
-      {
-         if (e.ScrollOrientation == ScrollOrientation.VerticalScroll)
-            scrollPanel1.VerticalScroll.Value = e.NewValue;
-         else
-            scrollPanel1.HorizontalScroll.Value = e.NewValue;
       }
 
       private void timer1_Tick(object sender, EventArgs e)
